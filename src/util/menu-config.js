@@ -1,16 +1,16 @@
 module.exports = [{
-  name: '基础',
-  id: 'basic',
+  name: '公益项目',
+  id: 'list',
   sub: [{
-    name: 'home',
+    name: '项目列表',
     componentName: 'Home'
   }, {
-    name: 'about',
+    name: '项目反馈',
     componentName: 'About'
   }]
 }, {
-  name: 'Form',
-  id: 'form',
+  name: '我的捐赠',
+  id: 'my-page',
   sub: [{
     name: 'home',
     componentName: 'Home'
