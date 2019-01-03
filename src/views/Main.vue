@@ -23,10 +23,15 @@ import NavMenu from '@/components/NavMenu'
 import Header from '@/components/Header'
 
 export default {
-  name: 'main',
+  name: '',
   components: {
     NavMenu,
     Header
+  },
+  beforeCreate () {
+    console.log('register tron web Action dispatched from Home.vue')
+    if (!this.$store.state.tronWeb.tronData.instance)
+      this.$store.dispatch('GET_TRON_INSTANCE')
   },
   computed: {
 
