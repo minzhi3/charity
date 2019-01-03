@@ -21,6 +21,12 @@
 
 export default {
   name: 'home',
+  async beforeCreate () {
+    console.log('register tron web Action dispatched from Home.vue')
+    if (this.$store.state.tronWeb.tronData.instance){
+      await this.$store.dispatch('GET_DEPLOYED_CONTRACT')
+    }
+  },
   components: {
   }
 }
