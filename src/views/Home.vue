@@ -34,6 +34,7 @@ export default {
 
 <style>
 .el-row {
-    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
 </style>
